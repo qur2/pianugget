@@ -1,6 +1,7 @@
 import {default as Kefir} from 'kefir';
 import {loadSound, soundSampled} from './sound-loader';
 
+let sampleBtn = document.getElementById('sample');
 
 let keyStream = mkKeyboardStream(
   document.getElementById('keyboard'),
