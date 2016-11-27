@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Pianugget, like your keyboard was a big nugget."/>
-    <title>Pianugget</title>
-  </head>
-  <body>
-    <div class="uk-grid js-container">
-      <div class="uk-width-large-2-4 uk-width-medium-2-3 uk-width-small-1-1 uk-container-center">
-        <button id="sample">Record sample</button>
-        <textarea id="keyboard"></textarea>
-      </div>
-    </div>
-    <script src="dist/js/app.js"></script>
-  </body>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="description" content="Pianugget, like your keyboard was a big nugget."/>
+  <title>Pianugget</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+</head>
+<body>
+<nav class="top-bar" data-topbar role="navigation">
+  <section class="top-bar-section">
+    <ul class="left">
+      <li class="active">
+        <a href="http://egorsmirnov.me/2015/10/11/react-and-es6-part5.html" target="_blank">
+          Blog post at egorsmirnov.me: React and ES6 - Part 5, React and ES6 Workflow with JSPM
+        </a>
+      </li>
+    </ul>
+  </section>
+</nav>
+<div class="root"></div>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('src/app.js');
+</script>
+</body>
 </html>

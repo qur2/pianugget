@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+
+	<title>SystemJS Polymer Test</title>
+
+	<!-- <link rel="stylesheet" type="text/css"
+		href="jspm_packages/github/charto/charto-polymer-shim/hide.css" /> -->
+	<script src="jspm_packages/system.js"></script>
+	<script src="config.js"></script>
+	<!-- <script src="bower_components/charto-polymer-shim/loader.js"></script> -->
+
+	<script>
+		// loadMainComponents([
+		// 	[
+		// 		'bower_components/polymer/polymer.html!',
+		// 		'bower_components/polymer-ts/polymer-ts.html!'
+		// 	],
+		// 	'app'
+		// ]);
+		System.import('src/q-keyboard.js').then(Qboard => {
+			// document.getElementById('qboard').appendChild(new Qboard());
+		});
+	</script>
+</head>
+
+<body unresolved>
+	<q-keyboard tabindex="1"></q-keyboard>
+</body>
+</html>

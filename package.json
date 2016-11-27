@@ -34,7 +34,39 @@
     "gulp-duration": "0.0.0",
     "jscs": "^1.9.0",
     "jshint": "^2.5.11",
+    "jspm": "^0.16.19",
     "watchify": "^2.2.1",
     "yargs": "^1.3.3"
+  },
+  "jspm": {
+    "dependencies": {
+      "Hypercubed/systemjs-plugin-html": "github:Hypercubed/systemjs-plugin-html@^0.0.7",
+      "bosonic": "npm:bosonic@^1.0.0",
+      "charata": "npm:charata@^0.2.0",
+      "charto/charto-polymer-shim": "github:charto/charto-polymer-shim@^0.0.1",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "incremental-dom": "npm:incremental-dom@^0.3.0",
+      "jsx": "npm:jspm-loader-jsx@^0.0.7",
+      "polymer": "npm:polymer@^0.4.1",
+      "polymer-js": "npm:polymer-js@^1.0.5",
+      "qur2/charata": "github:qur2/charata@master",
+      "react": "npm:react@^0.14.5",
+      "react-dom": "npm:react-dom@^0.14.5",
+      "skatejs": "npm:skatejs@^0.15.2",
+      "skatejs-dom-diff": "npm:skatejs-dom-diff@^0.2.0",
+      "starplate": "npm:starplate@^0.0.25",
+      "superviews.js": "npm:superviews.js@^0.0.8",
+      "text": "github:systemjs/plugin-text@^0.0.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "npm:skatejs-dom-diff@0.2.0": {
+        "format": "es6"
+      }
+    }
   }
 }
